@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caldara – Sonata II (op. 1, 1693)</title>
+  <style>
+    :root {
+      --bg: #f7f4ee;
+      --paper: #ffffff;
+      --ink: #222;
+      --muted: #666;
+      --line: #d7d1c7;
+      --head: #ece6da;
+      --accent: #3d4f66;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.45;
+    }
+    .sheet {
+      max-width: 1120px;
+      margin: 0 auto;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, .06);
+    }
+    .topbar {
+      padding: 18px 24px 10px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(to bottom, #faf8f3, #f3eee5);
+    }
+    .topbar h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .subtitle {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .content {
+      padding: 22px 24px 30px;
+    }
+    .section {
+      margin-bottom: 26px;
+    }
+    .section-title {
+      margin: 0 0 10px;
+      padding: 6px 10px;
+      background: var(--head);
+      border: 1px solid var(--line);
+      font-size: 17px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .4px;
+    }
+    table.meta,
+    .mov-table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    table.meta th,
+    table.meta td,
+    .mov-table th,
+    .mov-table td {
+      border: 1px solid var(--line);
+      padding: 8px 10px;
+      vertical-align: top;
+      font-size: 15px;
+    }
+    table.meta th,
+    .mov-table th {
+      background: #faf7f1;
+      text-align: left;
+      font-weight: 700;
+    }
+    table.meta th {
+      width: 23%;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .note-box {
+      border: 1px solid var(--line);
+      padding: 12px 14px;
+      background: #fcfbf8;
+      min-height: 84px;
+      font-size: 15px;
+    }
+    .incipit-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    .incipit-card {
+      border: 1px solid var(--line);
+      background: #fff;
+      padding: 14px;
+    }
+    .incipit-card h3 {
+      margin: 0 0 10px;
+      font-size: 16px;
+    }
+    .incipit-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+    .mono {
+      font-family: "Courier New", monospace;
+      font-size: 14px;
+    }
+    ul {
+      margin: 8px 0 0 18px;
+      padding: 0;
+    }
+    p {
+      margin: 8px 0 0;
+    }
+    .small {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 900px) {
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <header class="topbar">
+      <h1>Antonio Caldara – Sonata II (op. 1, 1693)</h1>
+      <div class="subtitle">Scheda catalografica della seconda sonata dell’Opera I; stato consolidato su filesystem, database e pipeline editoriale</div>
+    </header>
+
+    <main class="content">
+      <section class="section">
+        <h2 class="section-title">1. Identificazione</h2>
+        <table class="meta">
+          <tr>
+            <th>Compositore</th>
+            <td>Antonio Caldara (ca. 1670–1736)</td>
+            <th>ID interno catalogo</th>
+            <td class="mono">OP1_SONATA_02</td>
+          </tr>
+          <tr>
+            <th>Titolo uniforme</th>
+            <td>Sonata II</td>
+            <th>Genere</th>
+            <td>Sonata a tre</td>
+          </tr>
+          <tr>
+            <th>Raccolta</th>
+            <td>Opera I</td>
+            <th>Data di prima pubblicazione</th>
+            <td>1693</td>
+          </tr>
+          <tr>
+            <th>Catalog group</th>
+            <td>Opera I</td>
+            <th>Organico</th>
+            <td>2 violini, violoncello e basso continuo</td>
+          </tr>
+          <tr>
+            <th>work_id</th>
+            <td class="mono">28</td>
+            <th>folder_name</th>
+            <td class="mono">Sonata_02</td>
+          </tr>
+          <tr>
+            <th>Note DB</th>
+            <td colspan="3">Record della sonata in Opera I; stato consolidato dopo riallineamento di filesystem, catalog_files e recordings.</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">2. Struttura musicale e dati di movimento</h2>
+        <table class="mov-table">
+          <thead>
+            <tr>
+              <th>Movimento</th>
+              <th>Tempo</th>
+              <th>Chiave / area tonale</th>
+              <th>Misure</th>
+              <th>Note rilevanti registrate nel DB</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>I</td>
+              <td>Grave</td>
+              <td>1 diesis / Sol maggiore</td>
+              <td>1–17</td>
+              <td>Dati estratti da <span class="mono">S2_M1_Vl1_RISM.musicxml</span>. Metro 4/4. Armatura: 1 diesis, modo maggiore. Estensione del file: battute 1–12.</td>
+            </tr>
+            <tr>
+              <td>II</td>
+              <td>Allegro</td>
+              <td>Area di Sol maggiore</td>
+              <td>18–75</td>
+              <td>Ed. 1693: Violino Primo e Secondo = Allegro; Violoncello e Organo = Allegro. Ed. 1698: Violino Primo, Violino Secondo e Organo = Allegro; Violoncello = Allegro. Ed. 1700: indicazioni come nell’edizione 1693.</td>
+            </tr>
+            <tr>
+              <td>III</td>
+              <td>Grave / Adagio</td>
+              <td>Area di Mi minore</td>
+              <td>76–103</td>
+              <td>Ed. 1693: Violino Primo e Secondo = Grave; Violoncello e Organo = Adagio. Ed. 1698: Violino Primo, Violino Secondo e Organo = Grave; Violoncello = Adagio. Ed. 1700: indicazioni come nell’edizione 1693.</td>
+            </tr>
+            <tr>
+              <td>IV</td>
+              <td>Allegro</td>
+              <td>1 diesis / Sol maggiore</td>
+              <td>104–157</td>
+              <td>Ed. 1693: Violino Primo e Secondo = Allegro; Violoncello e Organo = Allegro. Ed. 1698: Violino Primo, Violino Secondo e Organo = Allegro; Violoncello = Allegro. Ed. 1700: indicazioni come nell’edizione 1693. Armatura coerente con area di Sol maggiore.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="small">Le note di questa sezione derivano direttamente dai record della tabella <span class="mono">movements</span> per <span class="mono">sonata_id = 3</span>.</p>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">3. Layer del progetto e criteri editoriali</h2>
+        <div class="grid-2">
+          <div class="note-box">
+            <strong>Layer DB interno</strong>
+            <ul>
+              <li>Incipits a 4 battute per Vl1, Vl2, Vc, Org</li>
+              <li>Incipits a 12 battute per Vl1, Vl2, Vc, Org</li>
+              <li>I file <span class="mono">Tutti_12_Misure</span> restano sorgenti tecniche e non devono entrare nel layer editoriale</li>
+              <li><span class="mono">catalog_files</span> riallineato per file musicali editoriali e tecnici pertinenti</li>
+            </ul>
+          </div>
+          <div class="note-box">
+            <strong>Layer editoriale</strong>
+            <ul>
+              <li>Solo Violino I a 4 battute</li>
+              <li>Output editoriali corretti in <span class="mono">04_MEI</span> e <span class="mono">05_SVG</span></li>
+              <li>Pipeline blindata per impedire la ricreazione di cartelle spurie sotto <span class="mono">03_MUSICXML</span></li>
+              <li>La scheda HTML completa il layer editoriale finale della sonata</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">4. Edizioni moderne</h2>
+        <table class="mov-table">
+          <thead>
+            <tr>
+              <th>Titolo</th>
+              <th>Curatore</th>
+              <th>Editore</th>
+              <th>Numero</th>
+              <th>Descrizione</th>
+              <th>Note DB</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sonate a 3 op. 1</td>
+              <td>Pasquale Spiniello</td>
+              <td>Musedita</td>
+              <td>WALHALL-CA101</td>
+              <td>Partitura e parti</td>
+              <td>Edizione moderna dell’Opera I; da mantenere anche a livello di singola sonata.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">5. Discografia e media</h2>
+        <table class="mov-table">
+          <thead>
+            <tr>
+              <th>Tipo</th>
+              <th>Titolo</th>
+              <th>Etichetta / piattaforma</th>
+              <th>Anno</th>
+              <th>Note rilevanti</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Incisione discografica</td>
+              <td>Parnassi Musici – Trio Sonatas – Cello Sonatas</td>
+              <td>cpo / Classic Produktion Osnabrueck, 999 871-2</td>
+              <td>2002</td>
+              <td>Contiene la Sonata op. 1/2 tra le tracce 14–17; presenti file audio locali, note e link YouTube nella cartella <span class="mono">Sonata_02\08_DISCOGRAFIA_MEDIA\CPO_999871-2_Parnassi_Musici_2002</span>; barcode EAN 0761203987122.</td>
+            </tr>
+            <tr>
+              <td>Incisione discografica</td>
+              <td>Antonio Caldara – Sonate a 3 op. 1</td>
+              <td>Verso, VRS 2123</td>
+              <td>2012</td>
+              <td>Contiene Sonata Seconda tra le tracce 16–19; presenti file audio locali, note e link YouTube nella cartella <span class="mono">Sonata_02\08_DISCOGRAFIA_MEDIA\Verso_VRS2123_2012</span>.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">6. Incipit editoriali SVG</h2>
+        <div class="incipit-list">
+          <div class="incipit-card">
+            <h3>Movimento I – Violino I (RISM)</h3>
+            <img src="../05_SVG/S2_M1_Vl1_RISM.svg" alt="Incipit Movimento I">
+          </div>
+          <div class="incipit-card">
+            <h3>Movimento II – Violino I (RISM)</h3>
+            <img src="../05_SVG/S2_M2_Vl1_RISM.svg" alt="Incipit Movimento II">
+          </div>
+          <div class="incipit-card">
+            <h3>Movimento III – Violino I (RISM)</h3>
+            <img src="../05_SVG/S2_M3_Vl1_RISM.svg" alt="Incipit Movimento III">
+          </div>
+          <div class="incipit-card">
+            <h3>Movimento IV – Violino I (RISM)</h3>
+            <img src="../05_SVG/S2_M4_Vl1_RISM.svg" alt="Incipit Movimento IV">
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">7. Note del catalogo</h2>
+        <div class="grid-2">
+          <div class="note-box">
+            <strong>Discrepanze editoriali e dati comparativi</strong>
+            <ul>
+              <li>Movimento I: dati diretti da file RISM, con metro 4/4 e armatura di Sol maggiore.</li>
+              <li>Movimento II: concordanza generale delle indicazioni di tempo nelle edizioni 1693, 1698 e 1700.</li>
+              <li>Movimento III: differenza sistematica tra <em>Grave</em> (violini) e <em>Adagio</em> (violoncello e organo) già registrata nel DB.</li>
+              <li>Movimento IV: conferma della coerenza tonale in Sol maggiore e stabilità dell’indicazione <em>Allegro</em> nelle edizioni considerate.</li>
+            </ul>
+          </div>
+          <div class="note-box">
+            <strong>Nota tecnico-catalografica</strong>
+            <p>Questa scheda integra i dati rilevanti già presenti nel database: record di <span class="mono">works</span>, analisi dei movimenti, edizione moderna, registrazioni e note comparative tra le edizioni a stampa. Sonata II è stata riallineata integralmente al modello di Sonata I.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

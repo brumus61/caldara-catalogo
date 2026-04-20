@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caldara – Argene (1689)</title>
+  <style>
+    :root {
+      --bg: #f7f4ee;
+      --paper: #ffffff;
+      --ink: #222;
+      --muted: #666;
+      --line: #d7d1c7;
+      --head: #ece6da;
+      --accent: #3d4f66;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.45;
+    }
+    .sheet {
+      max-width: 1120px;
+      margin: 0 auto;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, .06);
+    }
+    .topbar {
+      padding: 18px 24px 10px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(to bottom, #faf8f3, #f3eee5);
+    }
+    .topbar h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .subtitle {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .content {
+      padding: 22px 24px 30px;
+    }
+    .section {
+      margin-bottom: 26px;
+    }
+    .section-title {
+      margin: 0 0 10px;
+      padding: 6px 10px;
+      background: var(--head);
+      border: 1px solid var(--line);
+      font-size: 17px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .4px;
+    }
+    table.meta,
+    .mov-table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    table.meta th,
+    table.meta td,
+    .mov-table th,
+    .mov-table td {
+      border: 1px solid var(--line);
+      padding: 8px 10px;
+      vertical-align: top;
+      font-size: 15px;
+    }
+    table.meta th,
+    .mov-table th {
+      background: #faf7f1;
+      text-align: left;
+      font-weight: 700;
+    }
+    table.meta th {
+      width: 23%;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .note-box {
+      border: 1px solid var(--line);
+      padding: 12px 14px;
+      background: #fcfbf8;
+      min-height: 84px;
+      font-size: 15px;
+    }
+    .empty-box {
+      border: 1px dashed #c8bfae;
+      background: #fbf8f2;
+      padding: 16px;
+      font-size: 15px;
+    }
+    .mono {
+      font-family: "Courier New", monospace;
+      font-size: 14px;
+    }
+    ul {
+      margin: 8px 0 0 18px;
+      padding: 0;
+    }
+    @media (max-width: 900px) {
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <header class="topbar">
+      <h1>Antonio Caldara – Argene (1689)</h1>
+      <div class="subtitle">Scheda catalografica d'opera basata sul libretto a stampa e sulla tradizione bibliografica; musica perduta</div>
+    </header>
+
+    <main class="content">
+      <section class="section">
+        <h2 class="section-title">1. Identificazione</h2>
+        <table class="meta">
+          <tr>
+            <th>Compositore</th>
+            <td>Antonio Caldara (c. 1670–1736)</td>
+            <th>ID interno catalogo</th>
+            <td class="mono">ARGENE_1689</td>
+          </tr>
+          <tr>
+            <th>Titolo uniforme</th>
+            <td>L&#x27;Argene</td>
+            <th>Genere</th>
+            <td>Dramma per musica / opera</td>
+          </tr>
+          <tr>
+            <th>Titolo diplomatico</th>
+            <td colspan="3">L&#x27;Argene</td>
+          </tr>
+          <tr>
+            <th>Librettista</th>
+            <td>Paolo Emilio Badi</td>
+            <th>Datazione</th>
+            <td>1689</td>
+          </tr>
+          <tr>
+            <th>Luogo / teatro</th>
+            <td>Venezia / Teatro ai Saloni</td>
+            <th>Stato della musica</th>
+            <td>Musica perduta</td>
+          </tr>
+          <tr>
+            <th>Attribution status</th>
+            <td>Opera attribuita a Caldara; identificazione fondata sul libretto e sulla tradizione bibliografica</td>
+            <th>Parole chiave</th>
+            <td>opera; Venezia; 1689; libretto a stampa; musica perduta</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">2. Fonte / descrizione catalografica</h2>
+        <div class="grid-2">
+          <table class="meta">
+            <tr><th>Categoria di fonte</th><td>Libretto a stampa</td></tr>
+            <tr><th>Tipo di contenuto</th><td>Testo drammatico / fonte librettistica</td></tr>
+            <tr><th>Datazione</th><td>1689</td></tr>
+            <tr><th>Luogo</th><td>Venezia</td></tr>
+            <tr><th>Teatro</th><td>Teatro ai Saloni</td></tr>
+            <tr><th>Stato musicale</th><td>Musica perduta</td></tr>
+          </table>
+
+          <table class="meta">
+            <tr><th>Opera nel DB</th><td class="mono">works.id = 24</td></tr>
+            <tr><th>catalog_files</th><td>nessun file registrato al momento</td></tr>
+            <tr><th>Fonte primaria attuale</th><td>tradizione del libretto a stampa</td></tr>
+            <tr><th>Incipit musicali</th><td>non disponibili</td></tr>
+            <tr><th>HTML</th><td>da registrare dopo creazione</td></tr>
+            <tr><th>Ultimo stato</th><td>scheda HTML da creare ex novo</td></tr>
+          </table>
+        </div>
+
+        <div style="margin-top:16px;">
+          <h3 style="margin:0 0 8px; font-size:16px;">Identificativi catalografici</h3>
+          <div class="note-box">
+            <ul>
+<li><strong>SBN</strong>: MUS0001076</li>
+</ul>
+          </div>
+        </div>
+
+        <div style="margin-top:16px;">
+          <h3 style="margin:0 0 8px; font-size:16px;">Esemplari conservati</h3>
+          <table class="mov-table">
+            <thead>
+              <tr>
+                <th>Sigla</th>
+                <th>Biblioteca</th>
+                <th>Collocazione</th>
+                <th>Note</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+              <td class="mono">I-Bc</td>
+              <td>Bologna, Museo internazionale e Biblioteca della musica</td>
+              <td>Lo.00729</td>
+              <td>esemplare mutilo: mancano le pp. 25–32</td>
+            </tr>
+<tr>
+              <td class="mono">I-Mb</td>
+              <td>Milano, Biblioteca Nazionale Braidense</td>
+              <td>Racc.dramm.3499</td>
+              <td></td>
+            </tr>
+<tr>
+              <td class="mono">I-Mb</td>
+              <td>Milano, Biblioteca Nazionale Braidense</td>
+              <td>Racc.dramm.3781</td>
+              <td></td>
+            </tr>
+<tr>
+              <td class="mono">I-Rc</td>
+              <td>Roma, Biblioteca Casanatense</td>
+              <td>COMM 459 5</td>
+              <td></td>
+            </tr>
+<tr>
+              <td class="mono">I-Rig</td>
+              <td>Roma, Istituto Storico Germanico</td>
+              <td>Rar. Libr. Ven. 261/268#268</td>
+              <td>esemplare mutilo: mancano le pp. 25–32</td>
+            </tr>
+<tr>
+              <td class="mono">I-Vcg</td>
+              <td>Venezia, Biblioteca Casa di Goldoni – Centro Studi Teatrali</td>
+              <td>59 A 101.05</td>
+              <td></td>
+            </tr>
+<tr>
+              <td class="mono">I-Vnm</td>
+              <td>Venezia, Biblioteca Nazionale Marciana</td>
+              <td>Dramm.3502.10</td>
+              <td></td>
+            </tr>
+<tr>
+              <td class="mono">US-LAum</td>
+              <td>Los Angeles, University of California, Music Library</td>
+              <td>1689/09</td>
+              <td></td>
+            </tr>
+<tr>
+              <td class="mono">US-Wc</td>
+              <td>Washington, Library of Congress, Music Division</td>
+              <td>ML48 [S1492]</td>
+              <td></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">3. Struttura musicale / stato della trasmissione</h2>
+        <div class="empty-box">
+          <strong>Musica perduta.</strong><br>
+          Allo stato attuale non risultano fonti musicali notate disponibili per Argene (1689). La ricostruzione catalografica della composizione si fonda quindi sul libretto a stampa, sugli esemplari conservati e sulla bibliografia specialistica.
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">4. Incipit</h2>
+        <div class="empty-box">
+          Nessun incipit musicale disponibile. Nessun file SVG collegato.
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">5. Note del catalogo / interoperabilità</h2>
+
+        <div class="grid-2">
+          <div class="note-box">
+            <strong>Bibliografia</strong>
+            <ul>
+<li>Grove Music Online</li>
+<li>Selfridge-Field 2007, p. 635 – Eleanor Selfridge-Field, A New Chronology of Venetian Opera and Related Genres, 1660–1760. Stanford, 2007.</li>
+<li>Sonneck 1914, (Schatz 01492) – Oscar G. T. Sonneck, Catalogue of Opera Librettos Printed before 1800. Washington, Library of Congress.</li>
+<li>Alm 1992, 0360 (1689/09) – Irene Alm, Catalog of Venetian Librettos at UCLA.</li>
+<li>Walker 1986, 1689-02 – Thomas Walker, Seventeenth Century Venetian Opera: An Annotated Catalogue.</li>
+<li>Chiarelli – Pompilio 2004, p. 365 – Or vaghi or fieri. Cenni di poetica nei libretti veneziani (ca. 1640–1740).</li>
+<li>Sartori 1990, n. 02424 – Claudio Sartori, I libretti italiani a stampa dalle origini al 1800.</li>
+</ul>
+          </div>
+          <div class="note-box">
+            <strong>Nota musicologica</strong>
+            <p>L’Argene rappresenta una delle prime opere teatrali di Antonio Caldara, composta quando il musicista era ancora attivo nell’ambiente veneziano. L’opera fu rappresentata nel 1689 al Teatro ai Saloni e testimonia la produzione operistica veneziana tardo-seicentesca, con libretto dell’abate Paolo Emilio Badi. Il libretto è conservato in numerosi esemplari a stampa e costituisce la principale fonte per la ricostruzione della struttura musicale dell’opera.</p>
+          </div>
+        </div>
+
+        <div class="grid-2" style="margin-top:14px;">
+          <div class="note-box">
+            <strong>Note filologiche / tradizione delle fonti</strong>
+            <ul>
+<li>Per Argene 1689 la fonte primaria attualmente disponibile è il libretto a stampa; allo stato attuale la musica è da considerarsi perduta.</li>
+<li>La scheda deve quindi essere costruita come scheda d’opera fondata sulla tradizione librettistica e bibliografica, non su fonti musicali notate.</li>
+<li>Gli esemplari conservati mostrano una trasmissione libraria relativamente ampia, con almeno due esemplari mutili segnalati.</li>
+</ul>
+          </div>
+          <div class="note-box">
+            <strong>Note tecniche del catalogo</strong>
+            <ul>
+<li>Questa scheda HTML adotta il modello grafico impostato per Sonata I, ma adattato a un’opera con musica perduta e senza incipit musicali SVG.</li>
+<li>In assenza di fonti musicali notate, non vengono generati record di incipit né collegamenti a file SVG.</li>
+<li>Il record work già presente nel database è works.id = 24; al momento non risultano file registrati in catalog_files per questa composizione.</li>
+</ul>
+          </div>
+        </div>
+
+        <div class="grid-2" style="margin-top:14px;">
+          <div class="note-box">
+            <strong>Campi utili per futura interoperabilità</strong>
+            <ul>
+<li>ID interno catalogo</li>
+<li>Titolo uniforme</li>
+<li>Titolo diplomatico</li>
+<li>Librettista</li>
+<li>Luogo e teatro di rappresentazione</li>
+<li>Datazione</li>
+<li>Stato della musica</li>
+<li>Esemplari conservati</li>
+<li>Identificativi catalografici</li>
+</ul>
+          </div>
+          <div class="note-box">
+            <strong>Nota operativa</strong>
+            <p>Dopo la generazione dell'HTML, il file potrà essere registrato in <span class="mono">catalog_files</span> con <span class="mono">work_id = 24</span> e <span class="mono">file_type = 'html'</span>.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
