@@ -23,7 +23,13 @@
       font-family: Georgia, "Times New Roman", serif;
       line-height: 1.45;
     }
-    a { color: var(--accent); }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
     .sheet {
       max-width: 1120px;
       margin: 0 auto;
@@ -46,8 +52,12 @@
       color: var(--muted);
       font-size: 15px;
     }
-    .content { padding: 22px 24px 30px; }
-    .section { margin-bottom: 26px; }
+    .content {
+      padding: 22px 24px 30px;
+    }
+    .section {
+      margin-bottom: 26px;
+    }
     .section-title {
       margin: 0 0 10px;
       padding: 6px 10px;
@@ -58,23 +68,30 @@
       text-transform: uppercase;
       letter-spacing: .4px;
     }
-    table.meta, .mov-table {
+    table.meta,
+    .mov-table {
       width: 100%;
       border-collapse: collapse;
       table-layout: fixed;
     }
-    table.meta th, table.meta td, .mov-table th, .mov-table td {
+    table.meta th,
+    table.meta td,
+    .mov-table th,
+    .mov-table td {
       border: 1px solid var(--line);
       padding: 8px 10px;
       vertical-align: top;
       font-size: 15px;
     }
-    table.meta th, .mov-table th {
+    table.meta th,
+    .mov-table th {
       background: #faf7f1;
       text-align: left;
       font-weight: 700;
     }
-    table.meta th { width: 23%; }
+    table.meta th {
+      width: 23%;
+    }
     .grid-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -108,21 +125,24 @@
       border: 1px solid var(--line);
       background: #fff;
     }
-    .mono {
-      font-family: "Courier New", monospace;
-      font-size: 14px;
+    .link-list {
+      margin: 8px 0 0 18px;
+      padding: 0;
+    }
+    .link-list li {
+      margin: 4px 0;
     }
     ul {
       margin: 8px 0 0 18px;
       padding: 0;
     }
-    p { margin: 8px 0 0; }
-    .small {
-      color: var(--muted);
-      font-size: 14px;
+    p {
+      margin: 8px 0 0;
     }
     @media (max-width: 900px) {
-      .grid-2 { grid-template-columns: 1fr; }
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -161,49 +181,145 @@
       <section class="section">
         <h2 class="section-title">2. Fonti a stampa</h2>
 
-        <div class="note-box" style="margin-bottom:14px;">
+        <div class="note-box" style="margin-bottom: 14px;">
           L’Opera prima di Caldara conobbe una precoce diffusione internazionale: alla prima edizione veneziana del 1693 seguì una ristampa ad Amsterdam presso Estienne Roger (ca. 1698), e una successiva emissione veneziana del 1700 presso Giuseppe Sala.
         </div>
 
-        <h3 style="margin:0 0 8px; font-size:16px;">Edizione veneziana, Giuseppe Sala, 1693</h3>
+        <h3 style="margin: 0 0 8px; font-size: 16px;">Edizione veneziana, Giuseppe Sala, 1693</h3>
         <table class="meta">
-          <tr><th>Luogo</th><td>Venezia</td><th>Editore</th><td>Giuseppe Sala</td></tr>
-          <tr><th>Data</th><td>1693</td><th>RISM</th><td>A/I C 57</td></tr>
-          <tr><th>RISM ID</th><td>990007855</td><th>Tipo di fonte</th><td>Stampa; musica notata; parti</td></tr>
+          <tr>
+            <th>Luogo</th>
+            <td>Venezia</td>
+            <th>Editore</th>
+            <td>Giuseppe Sala</td>
+          </tr>
+          <tr>
+            <th>Data</th>
+            <td>1693</td>
+            <th>RISM</th>
+            <td>A/I C 57</td>
+          </tr>
+          <tr>
+            <th>RISM ID</th>
+            <td>990007855</td>
+            <th>Tipo di fonte</th>
+            <td>Stampa; musica notata; parti</td>
+          </tr>
         </table>
-        <table class="mov-table" style="margin-top:10px;">
-          <thead><tr><th>Sigla</th><th>Biblioteca</th><th>Collocazione</th><th>Note</th></tr></thead>
+        <table class="mov-table" style="margin-top: 10px;">
+          <thead>
+            <tr>
+              <th>Sigla</th>
+              <th>Biblioteca</th>
+              <th>Collocazione</th>
+              <th>Note</th>
+            </tr>
+          </thead>
           <tbody>
-            <tr><td class="mono">GB-Lwa</td><td>Westminster Abbey Library</td><td></td><td></td></tr>
+            <tr>
+              <td>GB-Lwa</td>
+              <td>Westminster Abbey Library</td>
+              <td></td>
+              <td></td>
+            </tr>
           </tbody>
         </table>
 
-        <h3 style="margin:16px 0 8px; font-size:16px;">Edizione di Amsterdam, Estienne Roger, [1698]</h3>
+        <h3 style="margin: 16px 0 8px; font-size: 16px;">Edizione di Amsterdam, Estienne Roger, [1698]</h3>
         <table class="meta">
-          <tr><th>Luogo</th><td>Amsterdam</td><th>Editore</th><td>Estienne Roger</td></tr>
-          <tr><th>Data</th><td>[1698]</td><th>RISM</th><td>A/I C 59</td></tr>
-          <tr><th>RISM ID</th><td>990007857</td><th>Tipo di fonte</th><td>Stampa; musica notata</td></tr>
+          <tr>
+            <th>Luogo</th>
+            <td>Amsterdam</td>
+            <th>Editore</th>
+            <td>Estienne Roger</td>
+          </tr>
+          <tr>
+            <th>Data</th>
+            <td>[1698]</td>
+            <th>RISM</th>
+            <td>A/I C 59</td>
+          </tr>
+          <tr>
+            <th>RISM ID</th>
+            <td>990007857</td>
+            <th>Tipo di fonte</th>
+            <td>Stampa; musica notata</td>
+          </tr>
         </table>
-        <table class="mov-table" style="margin-top:10px;">
-          <thead><tr><th>Sigla</th><th>Biblioteca</th><th>Collocazione</th><th>Note</th></tr></thead>
+        <table class="mov-table" style="margin-top: 10px;">
+          <thead>
+            <tr>
+              <th>Sigla</th>
+              <th>Biblioteca</th>
+              <th>Collocazione</th>
+              <th>Note</th>
+            </tr>
+          </thead>
           <tbody>
-            <tr><td class="mono">D-WD</td><td>Musiksammlung der Grafen von Schönborn-Wiesentheid</td><td></td><td></td></tr>
-            <tr><td class="mono">GB-Lbl</td><td>The British Library</td><td>g.920.</td><td></td></tr>
-            <tr><td class="mono">GB-Ob</td><td>Bodleian Library</td><td></td><td></td></tr>
+            <tr>
+              <td>D-WD</td>
+              <td>Musiksammlung der Grafen von Schönborn-Wiesentheid</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>GB-Lbl</td>
+              <td>The British Library</td>
+              <td>g.920.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>GB-Ob</td>
+              <td>Bodleian Library</td>
+              <td></td>
+              <td></td>
+            </tr>
           </tbody>
         </table>
 
-        <h3 style="margin:16px 0 8px; font-size:16px;">Edizione veneziana, Giuseppe Sala, 1700</h3>
+        <h3 style="margin: 16px 0 8px; font-size: 16px;">Edizione veneziana, Giuseppe Sala, 1700</h3>
         <table class="meta">
-          <tr><th>Luogo</th><td>Venezia</td><th>Editore</th><td>Giuseppe Sala</td></tr>
-          <tr><th>Data</th><td>1700</td><th>RISM</th><td>A/I C 58</td></tr>
-          <tr><th>RISM ID</th><td>990007856</td><th>Tipo di fonte</th><td>Stampa; musica notata</td></tr>
+          <tr>
+            <th>Luogo</th>
+            <td>Venezia</td>
+            <th>Editore</th>
+            <td>Giuseppe Sala</td>
+          </tr>
+          <tr>
+            <th>Data</th>
+            <td>1700</td>
+            <th>RISM</th>
+            <td>A/I C 58</td>
+          </tr>
+          <tr>
+            <th>RISM ID</th>
+            <td>990007856</td>
+            <th>Tipo di fonte</th>
+            <td>Stampa; musica notata</td>
+          </tr>
         </table>
-        <table class="mov-table" style="margin-top:10px;">
-          <thead><tr><th>Sigla</th><th>Biblioteca</th><th>Collocazione</th><th>Note</th></tr></thead>
+        <table class="mov-table" style="margin-top: 10px;">
+          <thead>
+            <tr>
+              <th>Sigla</th>
+              <th>Biblioteca</th>
+              <th>Collocazione</th>
+              <th>Note</th>
+            </tr>
+          </thead>
           <tbody>
-            <tr><td class="mono">A-Wn</td><td>Österreichische Nationalbibliothek, Musiksammlung</td><td>SA.80.B.16/2.4</td><td>vl II, org</td></tr>
-            <tr><td class="mono">I-Bc</td><td>Museo internazionale e Biblioteca della musica</td><td>DD.221</td><td></td></tr>
+            <tr>
+              <td>A-Wn</td>
+              <td>Österreichische Nationalbibliothek, Musiksammlung</td>
+              <td>SA.80.B.16/2.4</td>
+              <td>vl II, org</td>
+            </tr>
+            <tr>
+              <td>I-Bc</td>
+              <td>Museo internazionale e Biblioteca della musica</td>
+              <td>DD.221</td>
+              <td></td>
+            </tr>
           </tbody>
         </table>
       </section>
@@ -279,33 +395,28 @@
 
       <section class="section">
         <h2 class="section-title">5. Discografia e media</h2>
-        <table class="mov-table">
-          <thead>
-            <tr>
-              <th>Tipo</th>
-              <th>Titolo</th>
-              <th>Etichetta / piattaforma</th>
-              <th>Anno</th>
-              <th>Note</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Incisione discografica</td>
-              <td>Parnassi Musici – Trio Sonatas – Cello Sonatas</td>
-              <td>cpo, 999 871-2</td>
-              <td>2002</td>
-              <td>La Sonata II corrisponde alle tracce 14–17.</td>
-            </tr>
-            <tr>
-              <td>Incisione discografica</td>
-              <td>Antonio Caldara – Sonate a 3 op. 1</td>
-              <td>Verso, VRS 2123</td>
-              <td>2012</td>
-              <td>La Sonata Seconda corrisponde alle tracce 16–19.</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="grid-2">
+          <div class="note-box">
+            <strong>Parnassi Musici – Trio Sonatas – Cello Sonatas</strong>
+            <p>cpo, 999 871-2 (2002). La Sonata II corrisponde alle tracce 14–17.</p>
+            <ul class="link-list">
+              <li><a href="https://www.youtube.com/watch?v=ZjLR6bNHBDI" target="_blank" rel="noopener noreferrer">Movimento I</a></li>
+              <li><a href="https://www.youtube.com/watch?v=zoXDb_XUWbg" target="_blank" rel="noopener noreferrer">Movimento II</a></li>
+              <li><a href="https://www.youtube.com/watch?v=c_50JzIXnD8" target="_blank" rel="noopener noreferrer">Movimento III</a></li>
+              <li><a href="https://www.youtube.com/watch?v=Gf1Q-MmZcjA" target="_blank" rel="noopener noreferrer">Movimento IV</a></li>
+            </ul>
+          </div>
+          <div class="note-box">
+            <strong>Antonio Caldara – Sonate a 3 op. 1</strong>
+            <p>Verso, VRS 2123 (2012). La Sonata Seconda corrisponde alle tracce 16–19.</p>
+            <ul class="link-list">
+              <li><a href="https://www.youtube.com/watch?v=S_n0yaA8tRw" target="_blank" rel="noopener noreferrer">Movimento I</a></li>
+              <li><a href="https://www.youtube.com/watch?v=U6833gtb9EM" target="_blank" rel="noopener noreferrer">Movimento II</a></li>
+              <li><a href="https://www.youtube.com/watch?v=k0c0iqkG_NA" target="_blank" rel="noopener noreferrer">Movimento III</a></li>
+              <li><a href="https://www.youtube.com/watch?v=rJIw0YfusSU" target="_blank" rel="noopener noreferrer">Movimento IV</a></li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section class="section">
