@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Caldara – Sonata I (op. 1, 1693)</title>
+  <title>Caldara – Sonata I (Opera I)</title>
   <style>
     :root {
       --bg: #f7f4ee;
@@ -13,6 +13,7 @@
       --line: #d7d1c7;
       --head: #ece6da;
       --accent: #3d4f66;
+      --link: #28486a;
     }
     * { box-sizing: border-box; }
     body {
@@ -22,6 +23,13 @@
       color: var(--ink);
       font-family: Georgia, "Times New Roman", serif;
       line-height: 1.45;
+    }
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     .sheet {
       max-width: 1120px;
@@ -97,10 +105,6 @@
       min-height: 84px;
       font-size: 15px;
     }
-    .mono {
-      font-family: "Courier New", monospace;
-      font-size: 14px;
-    }
     .incipit-list {
       display: grid;
       grid-template-columns: 1fr;
@@ -122,16 +126,20 @@
       border: 1px solid var(--line);
       background: #fff;
     }
+    .subsection-title {
+      margin: 16px 0 8px;
+      font-size: 16px;
+    }
+    .small {
+      color: var(--muted);
+      font-size: 14px;
+    }
     ul {
       margin: 8px 0 0 18px;
       padding: 0;
     }
     p {
       margin: 8px 0 0;
-    }
-    .small {
-      color: var(--muted);
-      font-size: 14px;
     }
     @media (max-width: 900px) {
       .grid-2 {
@@ -143,8 +151,8 @@
 <body>
   <div class="sheet">
     <header class="topbar">
-      <h1>Antonio Caldara – Sonata I (op. 1, 1693)</h1>
-      <div class="subtitle">Scheda catalografica della prima sonata dell’Opera I; modello reale di riferimento per struttura, DB e pipeline editoriale</div>
+      <h1>Antonio Caldara – Sonata I (Opera I)</h1>
+      <div class="subtitle">Scheda catalografica della prima sonata delle <em>Suonate a tre</em>, Opera prima</div>
     </header>
 
     <main class="content">
@@ -154,112 +162,224 @@
           <tr>
             <th>Compositore</th>
             <td>Antonio Caldara (ca. 1670–1736)</td>
-            <th>ID interno catalogo</th>
-            <td class="mono">OP1_SONATA_01</td>
-          </tr>
-          <tr>
-            <th>Titolo uniforme</th>
-            <td>Sonata I</td>
             <th>Genere</th>
             <td>Sonata a tre</td>
           </tr>
           <tr>
+            <th>Titolo uniforme</th>
+            <td>Sonata I</td>
             <th>Raccolta</th>
-            <td>Opera I</td>
-            <th>Data di prima pubblicazione</th>
-            <td>1693</td>
+            <td><em>Suonate a tre</em>, Opera prima</td>
           </tr>
           <tr>
-            <th>Catalog group</th>
-            <td>Opera I</td>
+            <th>Datazione</th>
+            <td>1693–1700</td>
             <th>Organico</th>
-            <td>2 violini, violoncello e basso continuo</td>
+            <td>2 violini, violoncello e organo (basso continuo)</td>
           </tr>
           <tr>
-            <th>work_id</th>
-            <td class="mono">27</td>
-            <th>folder_name</th>
-            <td class="mono">Sonata_01</td>
-          </tr>
-          <tr>
-            <th>Note DB</th>
-            <td colspan="3">Sonata a tre dall’Opera Prima.</td>
+            <th>Tipologia di fonte</th>
+            <td>Stampa musicale in parti</td>
+            <th>Tradizione nota</th>
+            <td>Edizioni a stampa del 1693, [1698] e 1700</td>
           </tr>
         </table>
       </section>
 
       <section class="section">
-        <h2 class="section-title">2. Struttura musicale e dati di movimento</h2>
+        <h2 class="section-title">2. Struttura musicale</h2>
         <table class="mov-table">
           <thead>
             <tr>
               <th>Movimento</th>
-              <th>Tempo</th>
-              <th>Chiave / area tonale</th>
+              <th>Tempo principale</th>
+              <th>Area tonale</th>
               <th>Misure</th>
-              <th>Note rilevanti registrate nel DB</th>
+              <th>Osservazioni</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>I</td>
               <td>Grave / Adagio</td>
-              <td>1 bemolle / Fa maggiore</td>
+              <td>Fa maggiore</td>
               <td>1–17</td>
-              <td>Divergenza tipografica tra <em>Grave</em> e <em>Adagio</em> nelle fonti a stampa.</td>
+              <td>Le fonti a stampa mostrano una divergenza tipografica tra <em>Grave</em> e <em>Adagio</em>.</td>
             </tr>
             <tr>
               <td>II</td>
               <td>Allegro</td>
-              <td>1 bemolle / Fa maggiore</td>
+              <td>Fa maggiore</td>
               <td>18–72</td>
-              <td>Nell’edizione veneziana del 1693 la parte di Violino II presenta erroneamente <em>Grave</em> al posto di <em>Allegro</em>.</td>
+              <td>Nell’edizione veneziana del 1693 la parte di Violino II reca erroneamente <em>Grave</em> invece di <em>Allegro</em>.</td>
             </tr>
             <tr>
               <td>III</td>
               <td>Adagio</td>
-              <td>1 bemolle / Re minore</td>
+              <td>Re minore</td>
               <td>73–104</td>
-              <td>L’armatura presenta un bemolle, ma la tonalità reale del movimento è Re minore.</td>
+              <td>L’armatura presenta un bemolle, ma il movimento gravita chiaramente nell’area di Re minore.</td>
             </tr>
             <tr>
               <td>IV</td>
-              <td>Allegro-Presto</td>
-              <td>1 bemolle / Fa maggiore</td>
+              <td>Allegro / Presto</td>
+              <td>Fa maggiore</td>
               <td>105–184</td>
-              <td>Nelle fonti a stampa si registra divergenza tra <em>Allegro</em> e <em>Presto</em> nelle parti.</td>
+              <td>Le parti divergono tra <em>Allegro</em> e <em>Presto</em> nell’indicazione iniziale.</td>
             </tr>
           </tbody>
         </table>
-        <p class="small">Le note di questa sezione derivano direttamente dai record della tabella <span class="mono">movements</span> per <span class="mono">sonata_id = 2</span>.</p>
       </section>
 
       <section class="section">
-        <h2 class="section-title">3. Layer del progetto e criteri editoriali</h2>
-        <div class="grid-2">
-          <div class="note-box">
-            <strong>Layer DB interno</strong>
-            <ul>
-              <li>Incipits a 4 battute per Vl1, Vl2, Vc, Org</li>
-              <li>Incipits a 12 battute per Vl1, Vl2, Vc, Org</li>
-              <li>Distinzione rigorosa rispetto al layer editoriale RISM</li>
-              <li>I file tecnici non editoriali restano separati dal layer di presentazione</li>
-            </ul>
-          </div>
-          <div class="note-box">
-            <strong>Layer editoriale</strong>
-            <ul>
-              <li>Solo Violino I a 4 battute</li>
-              <li>File editoriali: <span class="mono">musicxml</span>, <span class="mono">mei</span>, <span class="mono">svg</span></li>
-              <li>Sonata I costituisce il modello reale di riferimento per le altre sonate dell’Opera I</li>
-              <li>La scheda HTML è parte del layer editoriale finale</li>
-            </ul>
-          </div>
-        </div>
+        <h2 class="section-title">3. Fonti a stampa</h2>
+
+        <h3 class="subsection-title">Edizione veneziana, Giuseppe Sala, 1693</h3>
+        <table class="meta">
+          <tr><th>Luogo</th><td>Venezia</td><th>Editore</th><td>Giuseppe Sala</td></tr>
+          <tr><th>Data</th><td>1693</td><th>Serie RISM</th><td>A/I C 57</td></tr>
+          <tr><th>RISM ID</th><td>990007855</td><th>Tipo di fonte</th><td>Stampa, musica notata, parti</td></tr>
+          <tr><th>Titolo diplomatico</th><td colspan="3">Suonate a tre, due violini con violoncello, e parte per l’organo ... opera prima</td></tr>
+        </table>
+
+        <h4 class="subsection-title">Esemplari noti</h4>
+        <table class="mov-table">
+          <thead>
+            <tr>
+              <th>Sigla</th>
+              <th>Biblioteca</th>
+              <th>Collocazione</th>
+              <th>Note</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>GB-Lwa</td>
+              <td>Westminster Abbey Library</td>
+              <td></td>
+              <td>senza indicazione di segnatura</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="subsection-title">Edizione di Amsterdam, Estienne Roger, [1698]</h3>
+        <table class="meta">
+          <tr><th>Luogo</th><td>Amsterdam</td><th>Editore</th><td>Estienne Roger</td></tr>
+          <tr><th>Data</th><td>[1698]</td><th>Serie RISM</th><td>A/I C 59</td></tr>
+          <tr><th>RISM ID</th><td>990007857</td><th>Tipo di fonte</th><td>Stampa, musica notata</td></tr>
+          <tr><th>Titolo diplomatico</th><td colspan="3">Suonate a tre, due violini con violoncello, e parte per l’organo ... opera prima [Amsterdam, Estienne Roger]</td></tr>
+        </table>
+
+        <h4 class="subsection-title">Esemplari noti</h4>
+        <table class="mov-table">
+          <thead>
+            <tr>
+              <th>Sigla</th>
+              <th>Biblioteca</th>
+              <th>Collocazione</th>
+              <th>Note</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>D-WD</td>
+              <td>Musiksammlung der Grafen von Schönborn-Wiesentheid</td>
+              <td></td>
+              <td>senza indicazione di segnatura</td>
+            </tr>
+            <tr>
+              <td>GB-Lbl</td>
+              <td>The British Library</td>
+              <td>g.920.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>GB-Ob</td>
+              <td>Bodleian Library</td>
+              <td></td>
+              <td>senza indicazione di segnatura</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="subsection-title">Edizione veneziana, Giuseppe Sala, 1700</h3>
+        <table class="meta">
+          <tr><th>Luogo</th><td>Venezia</td><th>Editore</th><td>Giuseppe Sala</td></tr>
+          <tr><th>Data</th><td>1700</td><th>Serie RISM</th><td>A/I C 58</td></tr>
+          <tr><th>RISM ID</th><td>990007856</td><th>Tipo di fonte</th><td>Stampa, musica notata</td></tr>
+          <tr><th>Titolo diplomatico</th><td colspan="3">Suonate a tre, due violini con violoncello, e parte per l’organo ... opera prima [Venezia, Giuseppe Sala]</td></tr>
+        </table>
+
+        <h4 class="subsection-title">Esemplari noti</h4>
+        <table class="mov-table">
+          <thead>
+            <tr>
+              <th>Sigla</th>
+              <th>Biblioteca</th>
+              <th>Collocazione</th>
+              <th>Note</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>A-Wn</td>
+              <td>Österreichische Nationalbibliothek, Musiksammlung</td>
+              <td>SA.80.B.16/2.4</td>
+              <td>materiale conservato: vl II, org</td>
+            </tr>
+            <tr>
+              <td>I-Bc</td>
+              <td>Museo internazionale e biblioteca della musica</td>
+              <td>DD.221</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <section class="section">
-        <h2 class="section-title">4. Edizioni moderne</h2>
+        <h2 class="section-title">4. Confronto tra le edizioni</h2>
+        <table class="mov-table">
+          <thead>
+            <tr>
+              <th>Movimento</th>
+              <th>1693</th>
+              <th>[1698]</th>
+              <th>1700</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>I</td>
+              <td>Grave / Adagio</td>
+              <td>come 1693</td>
+              <td>come 1693</td>
+            </tr>
+            <tr>
+              <td>II</td>
+              <td>Allegro; nel Violino II compare erroneamente <em>Grave</em></td>
+              <td>Allegro</td>
+              <td>Allegro</td>
+            </tr>
+            <tr>
+              <td>III</td>
+              <td>Adagio</td>
+              <td>Adagio</td>
+              <td>Adagio</td>
+            </tr>
+            <tr>
+              <td>IV</td>
+              <td>Allegro / Presto</td>
+              <td>come 1693</td>
+              <td>come 1693</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="small">La scheda mette in evidenza le principali divergenze già osservate nella tradizione a stampa e integra in modo comparativo le tre edizioni note dell’Opera I.</p>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">5. Edizioni moderne</h2>
         <table class="mov-table">
           <thead>
             <tr>
@@ -268,98 +388,90 @@
               <th>Editore</th>
               <th>Numero</th>
               <th>Descrizione</th>
-              <th>Note DB</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Sonate a 3 op. 1</td>
+              <td><em>Sonate a 3 op. 1</em></td>
               <td>Pasquale Spiniello</td>
               <td>Musedita</td>
               <td>WALHALL-CA101</td>
-              <td>Partitura e parti</td>
-              <td>Edizione moderna dell’Opera I; da mantenere anche a livello di singola sonata.</td>
+              <td>Partitura e parti dell’Opera I.</td>
             </tr>
             <tr>
-              <td>Trio Sonata F Major Op. 1/1</td>
+              <td><em>Trio Sonata F Major Op. 1/1</em></td>
               <td>Frederick F. Polnauer</td>
               <td>Schott Musik</td>
               <td>ANT24</td>
-              <td>Partitura e parti; serie <em>Antiqua</em></td>
-              <td>Edizione moderna; difficoltà media.</td>
+              <td>Partitura e parti, serie <em>Antiqua</em>.</td>
             </tr>
           </tbody>
         </table>
       </section>
 
       <section class="section">
-        <h2 class="section-title">5. Discografia e media</h2>
+        <h2 class="section-title">6. Discografia e media</h2>
         <table class="mov-table">
           <thead>
             <tr>
               <th>Tipo</th>
               <th>Titolo</th>
-              <th>Etichetta / piattaforma</th>
+              <th>Editore / piattaforma</th>
               <th>Anno</th>
-              <th>Note rilevanti</th>
+              <th>Collegamento</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Incisione discografica</td>
-              <td>Parnassi Musici – Trio Sonatas – Cello Sonatas</td>
-              <td>cpo / Classic Produktion Osnabrueck, 999 871-2</td>
+              <td><em>Parnassi Musici – Trio Sonatas – Cello Sonatas</em></td>
+              <td>cpo, 999 871-2</td>
               <td>2002</td>
-              <td>Contiene la Sonata op. 1/1 alle tracce 1–4; presenti file audio locali, note, immagine e link YouTube nella cartella dedicata; booklet di 20 pagine; barcode EAN 0761203987122.</td>
+              <td>Sonata op. 1/1 alle tracce 1–4.</td>
             </tr>
             <tr>
               <td>Media online</td>
-              <td>Antonio Caldara – Sonata a 3 Op. 1 n. 1 in F major</td>
+              <td><em>Antonio Caldara – Sonata a 3 Op. 1 n. 1 in F major</em></td>
               <td>YouTube</td>
               <td>s.d.</td>
-              <td>Registrazione indipendente rispetto alla CPO; presenti note, immagine e link YouTube nella cartella <span class="mono">YouTube_Dialogo_Antico_Sonata1</span>.</td>
+              <td><a href="https://www.youtube.com/watch?v=KHvp4ok2nds" target="_blank" rel="noopener noreferrer">Apri il video</a></td>
             </tr>
           </tbody>
         </table>
       </section>
 
       <section class="section">
-        <h2 class="section-title">6. Incipit editoriali SVG</h2>
+        <h2 class="section-title">7. Incipit editoriali</h2>
         <div class="incipit-list">
           <div class="incipit-card">
-            <h3>Movimento I – Violino I (RISM)</h3>
+            <h3>Movimento I – Violino I</h3>
             <img src="S1_M1_Vl1_RISM.svg" alt="Incipit Movimento I">
           </div>
           <div class="incipit-card">
-            <h3>Movimento II – Violino I (RISM)</h3>
+            <h3>Movimento II – Violino I</h3>
             <img src="S1_M2_Vl1_RISM.svg" alt="Incipit Movimento II">
           </div>
           <div class="incipit-card">
-            <h3>Movimento III – Violino I (RISM)</h3>
+            <h3>Movimento III – Violino I</h3>
             <img src="S1_M3_Vl1_RISM.svg" alt="Incipit Movimento III">
           </div>
           <div class="incipit-card">
-            <h3>Movimento IV – Violino I (RISM)</h3>
+            <h3>Movimento IV – Violino I</h3>
             <img src="S1_M4_Vl1_RISM.svg" alt="Incipit Movimento IV">
           </div>
         </div>
       </section>
 
       <section class="section">
-        <h2 class="section-title">7. Note del catalogo</h2>
+        <h2 class="section-title">8. Note</h2>
         <div class="grid-2">
           <div class="note-box">
-            <strong>Discrepanze editoriali e tipografiche</strong>
-            <ul>
-              <li>Movimento I: divergenza tipografica tra <em>Grave</em> e <em>Adagio</em>.</li>
-              <li>Movimento II: nella stampa veneziana del 1693 il Violino II reca erroneamente <em>Grave</em> invece di <em>Allegro</em>.</li>
-              <li>Movimento III: armatura con un bemolle, ma lettura tonale effettiva di Re minore.</li>
-              <li>Movimento IV: divergenza nelle fonti tra <em>Allegro</em> e <em>Presto</em>.</li>
-            </ul>
+            <strong>Nota sulle edizioni</strong>
+            <p>L’Opera prima di Caldara conobbe una precoce diffusione internazionale: alla prima edizione veneziana del 1693 seguì una ristampa ad Amsterdam presso Estienne Roger, segno dell’interesse europeo per la produzione strumentale italiana, e quindi una successiva emissione veneziana del 1700 presso Giuseppe Sala.</p>
           </div>
           <div class="note-box">
-            <strong>Nota tecnico-catalografica</strong>
-            <p>Questa scheda integra esplicitamente tutte le informazioni rilevanti già registrate nel database per la sonata: dati di <span class="mono">works</span>, descrizione dei movimenti, edizioni moderne e registrazioni. Sonata I resta il modello strutturale di riferimento per l’Opera I.</p>
+            <strong>Nota editoriale</strong>
+            <p>La presente scheda raccoglie in forma unitaria i dati essenziali relativi alla Sonata I, distinguendo la tradizione a stampa, le principali divergenze editoriali tra le parti, le edizioni moderne e la documentazione sonora.</p>
           </div>
         </div>
       </section>
